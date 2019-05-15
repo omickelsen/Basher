@@ -1,0 +1,31 @@
+{
+  "name": "basher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omickelsen/Basher.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omickelsen/Basher/issues"
+  },
+  "homepage": "https://github.com/omickelsen/Basher#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.17.1",
+    "sequelize": "^5.8.6"
+  }
+}
