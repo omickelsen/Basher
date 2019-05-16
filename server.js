@@ -1,9 +1,10 @@
 // server.js this file is the initial starting point for the Node/Express server.
-
+require('dotenv').config()
 // Dependencies
 
 const express = require(`express`);
 const bodyParser = require(`body-parser`);
+
 
 //=========================================
 
