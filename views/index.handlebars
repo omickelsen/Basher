@@ -1,1 +1,60 @@
-<h1>Basher</h1>
+<header>
+    <div class="logo">
+        <img src="/assets/basher.png" />
+        
+    </div>
+    <div class="menu">
+
+    </div>
+</header>
+<section>
+   
+    <h2>the bash</h2>
+    <div class="post">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WCV8a5WgdvM" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+</section>
+<div class="container">
+<section>
+
+    <div class="flash-comments">
+        <div class="header">
+            <div><img src="/assets/comments.png"></div>
+            <div class="text">Comments</div>
+        </div>
+        <form class="pure-form" id="comment-form">
+            <div class="comment-form">
+                <div class="left-side">
+                    <div class="row">
+                        <input type="text" required placeholder="enter your name" id="new_comment_name">
+                        <input placeholder="enter valid email" required type="email" id="new_comment_email">
+                    </div>
+                    <div class="row">
+                        <textarea placeholder="enter comment text" required id="new_comment_text" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <button type="submit" class="button-secondary pure-button">Send Comment</button>
+                </div>
+            </div>
+        </form>
+        <div class="comments-list" id="comments-list">
+            <script id="comment-template" type="text/x-template">
+                            <div class="user-icon">
+                                <img src="/assets/user.png" />
+                            </div>
+                            <div class="comment-info">
+                                <div class="row">
+                                    <div class="name">_name_</div>
+                                    <div class="email">_email_</div>
+                                </div>
+                                <div class="row">
+                                    <div class="text">_comment_</div>
+                                </div>
+                            </div>
+                        </script>
+        </div>
+    </div>
+</section>
+</div>
