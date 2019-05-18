@@ -24,6 +24,7 @@
     "express-handlebars": "^3.1.0",
     "mysql": "^2.17.1",
     "mysql2": "^1.6.5",
+    "pusher": "^2.2.0",
     "sequelize": "^5.8.6"
   },
   "devDependencies": {
