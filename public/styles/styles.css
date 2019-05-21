@@ -1,42 +1,45 @@
 body{
-    margin:0;
-    padding:0;
-    font-family: Raleway;
-}
-
-header{
-    background: #2b303b;
-    height: 50px;
-    width:100%;
+    background-color:rgb(165, 155, 155);
     display: flex;
-    color:#fff;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-.flash-logo{
-    height:60px;
-    border-radius: 8px;
-    float: left;
-    margin-right: 15px;
+main {
+    flex: 1 0 auto;
 }
-
 
 section{
     padding: 15px;
     width:calc(100% - 45px);
 }
 
+.post {
+    text-align: center;
+}
+.brand-logo {
+    font-family: 'Luckiest Guy', cursive;
+    margin-left: 10px;
+   
+}
 .logo img{
     height: 35px;
     padding: 6px;
     margin-left: 20px;
 }
 
+.comment-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .flash-comments{
     border:1px solid #aeaeae;
     border-radius: 10px;
     width:50%;
     overflow: hidden;
+    color: black;
 }
 
 .post{

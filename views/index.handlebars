@@ -1,24 +1,29 @@
-<header>
-    <div class="logo">
-        <img src="/assets/basher.png" />
-        
-    </div>
-    <div class="menu">
-
-    </div>
-</header>
+<div class = "container">
+    <nav>
+        <div class="nav-wrapper blue lighten-4">
+        <a href="#!" class="brand-logo blue-text lighten 2">BASHER</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons blue-text darken 4">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="" class="blue-text darken 4">LOG IN</a></li>
+            <li><a href="" class="blue-text darken 4">SIGN UP</a></li>
+        </ul>
+        </div>
+    </nav>
+    
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="">LOG IN</a></li>
+        <li><a href="">SIGN UP</a></li>
+    </ul>
 <section>
-   
-    <h2>the bash</h2>
+
     <div class="post">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/WCV8a5WgdvM" frameborder="0"
             allowfullscreen></iframe>
     </div>
 </section>
 <div class="container">
-<section>
-
-    <div class="flash-comments">
+    <div class="comment-box">
+         <div class="flash-comments">
         <div class="header">
             <div><img src="/assets/comments.png"></div>
             <div class="text">Comments</div>
@@ -41,20 +46,26 @@
         </form>
         <div class="comments-list" id="comments-list">
             <script id="comment-template" type="text/x-template">
-                            <div class="user-icon">
-                                <img src="/assets/user.png" />
-                            </div>
-                            <div class="comment-info">
-                                <div class="row">
-                                    <div class="name">_name_</div>
-                                    <div class="email">_email_</div>
-                                </div>
-                                <div class="row">
-                                    <div class="text">_comment_</div>
-                                </div>
-                            </div>
-                        </script>
+                <div class="user-icon">
+                    <img src="/assets/user.png" />
+                </div>
+                <div class="comment-info">
+                    <div class="row">
+                        <div class="name">_name_</div>
+                        <div class="email">_email_</div>
+                    </div>
+                    <div class="row">
+                        <div class="text">_comment_</div>
+                    </div>
+                </div>
+            </script>
         </div>
     </div>
-</section>
+    </div>
 </div>
+<footer class="page-footer blue lighten 4">
+    <div class="container">
+        © 2019 Copyright 
+    <a class="grey-text text-lighten-4 right" href="#!">Links</a>
+    </div>
+</footer>
