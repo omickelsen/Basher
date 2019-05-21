@@ -4,19 +4,19 @@ USE basherDB;
 
 CREATE TABLE bashingTable
 (
-    id INTEGER
-    AUTO_INCREMENT NOT NULL,
+  id INTEGER
+  AUTO_INCREMENT NOT NULL,
   userName VARCHAR
-    (50),
+  (50),
   userEmail VARCHAR
-    (100),
+  (100),
   userComment VARCHAR
-    (1065),
+  (1065),
   PRIMARY KEY
-    (id)
+  (id)
 );
 
-    INSERT INTO bashingTable
-        (id, userName, userEmail, userComment)
-    VALUES
-        (1, "Braden Flory", "bradenflory2015@gmail.com", "Let's bash!");
+  INSERT INTO bashingTable
+    (id, userName, userEmail, userComment)
+  VALUES
+    (1, "Braden Flory", "bradenflory93@gmail.com", "Let's bash!");
