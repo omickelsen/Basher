@@ -7,6 +7,7 @@ const path = require('path');
 const bodyParser = require(`body-parser`);
 
 const Pusher = require('pusher');
+
 //=========================================
 console.log(process.env.APPID);
 
@@ -55,8 +56,17 @@ app.post('/comment', function(req, res){
       email: req.body.email,
       comment: req.body.comment
     }
-    pusher.trigger('Basher-staging', 'new_comment', newComment);
-    res.json({  created: true });
+    db.bashingTable.create({
+      userName: req.body.name,
+      userEmail: req.body.email,
+      userComment: req.body.comment
+    }).then(function(response){
+      console.log(response);
+      
+      pusher.trigger('Basher-staging', 'new_comment', newComment);
+      res.json({  created: true });
+    })
+ 
   });
 
 //routes
