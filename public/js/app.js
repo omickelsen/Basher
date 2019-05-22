@@ -4,11 +4,6 @@
 (function() {
   console.log("app.js");
 
-  
-  
-    
-
-
     //when you want your code to not be async because of the api key getting a call from the ajax!
     function getApiKey(){
       console.log("getting api key");
