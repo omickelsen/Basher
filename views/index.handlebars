@@ -40,23 +40,24 @@
                 </div>
             </div>
         </form>
-        <div class="comments-list" id="comments-list"></div>
+        <div class="comments-list" id="comments-list">
             {{#each bashingTable}}
-            <div id="comment-template">
-                <div class="user-icon">
-                    <img src="/assets/user.png" />
-                </div>
-                <div class="comment-info">
-                    <div class="row">
-                        <div class="name">{{this.userName}}</div>
-                        <div class="email">{{this.userEmail}}</div>
+                <div class="comment">
+                    <div class="user-icon">
+                        <img src="/assets/user.png" />
                     </div>
-                    <div class="row">
-                        <div class="text">{{this.userComment}}</div>
+                    <div class="comment-info">
+                        <div class="row">
+                            <div class="name">{{this.userName}}</div>
+                            <div class="email">{{this.userEmail}}</div>
+                        </div>
+                        <div class="row">
+                            <div class="text">{{this.userComment}}</div>
+                        </div>
                     </div>
-                </div>
-            </div>         
+                </div>         
             {{/each}}
+        </div>
             <script id="comment-template" type="text/x-template">
                 <div class="user-icon">
                     <img src="/assets/user.png" />
@@ -69,9 +70,8 @@
                     <div class="row">
                         <div class="text">_comment_</div>
                     </div>
-                </div>
+                </div>             
             </script>
         </div>
     </div>
 </section>
-</div>
