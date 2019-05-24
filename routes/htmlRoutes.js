@@ -6,7 +6,7 @@ const path = require(`path`);
 //=========================================
 module.exports = function(app){
 app.get(`/`, function(req, res){
-   db.bashingTable.findAll({limit:30})
+   db.bashingTable.findAll({order: [["createdAt","DESC"]], limit:20})
    // use promise method to pass the burgers...
    .then(function(basherDB) {
      console.log(basherDB);

@@ -63,7 +63,7 @@
       var newCommentNode = document.createElement('div');
       newCommentNode.classList.add('comment');
       newCommentNode.innerHTML = newCommentHtml;
-      commentsList.appendChild(newCommentNode);
+      commentsList.insertAdjacentElement("afterbegin", newCommentNode);
     }
 
     function addNewComment(event){
