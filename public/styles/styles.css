@@ -12,6 +12,72 @@ header{
     color:#fff;
 }
 
+nav{
+    height: 100px;
+}
+
+.brand-logo{
+    
+    font-family: 'Karla', sans-serif;
+}
+h2{
+  font-size: 60px;
+
+}
+
+h3{
+    font-size: 20px;
+}
+
+h1{
+   font-family: 'Karla', sans-serif;
+font-size: 85px;
+}
+
+#container{
+
+box-shadow: gray;
+height: 350px;
+width: 50%;
+margin-left: 350px;
+/* border: #42a5f5 2px solid; */
+background-color: white;
+border-radius: 20px;
+ padding: 10px;
+  box-shadow: 3px 5px 13px 2px #888888;
+  overflow: scroll;
+}
+#inside{
+    /* overflow: hidden; */
+    overflow: -moz-hidden-unscrollable;
+}
+
+
+
+footer{
+margin-top: 200px;
+height: 210px;
+background: #2b303b;
+color: white;
+box-shadow: 4px #888888;
+font-family: 'Karla', sans-serif;
+}
+.bottom-list{
+    margin-left: 20px;
+    margin-bottom: 8px;
+    
+}
+h3{
+    font-size: 40px;
+}
+
+
+li{
+    margin-left: 10px;
+    font-size: 23px;
+    
+}
+
 .flash-logo{
     height:60px;
     border-radius: 8px;
@@ -37,6 +103,10 @@ section{
     border-radius: 10px;
     width:50%;
     overflow: hidden;
+    box-shadow: gray;
+    margin-left: 365px;
+    box-shadow: 3px 5px 13px 2px #888888;
+    overflow: scroll;
 }
 
 .post{
@@ -47,6 +117,7 @@ section{
     display: flex;
     padding: 5px 20px;
     border-bottom: 1px solid #eaeaea;
+
 }
 
 .flash-comments .header .text{
