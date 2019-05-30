@@ -56,12 +56,15 @@
 
     console.log(data.name);
     console.log(data.comment);
-
+   
 
     var newCommentHtml = commentTemplate.innerHTML.replace('_name_', data.name);
 
     newCommentHtml = newCommentHtml.replace('_email_', data.email);
     newCommentHtml = newCommentHtml.replace('_comment_', data.comment);
+    newCommentHtml = newCommentHtml.replace('_time_', moment().format("LLL"));
+    console.log(data.createdAt);
+    
 
     var newCommentNode = document.createElement('div');
     newCommentNode.classList.add('comment');
