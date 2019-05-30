@@ -23,7 +23,7 @@
   }
 
   var pusherKey = getApiKey();
-  console.log("pusher key", pusherKey);
+  
 
 
 

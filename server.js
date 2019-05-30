@@ -9,7 +9,7 @@ const bodyParser = require(`body-parser`);
 const Pusher = require('pusher');
 
 //=========================================
-console.log(process.env.APPID);
+
 
 const pusher = new Pusher({
   appId: process.env.APPID,
