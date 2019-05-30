@@ -6,7 +6,7 @@ body{
 
 header{
     background: #2b303b;
-    height: 50px;
+    height: 90px;
     width:100%;
     display: flex;
     color:#fff;
@@ -20,18 +20,37 @@ nav{
     
     font-family: 'Karla', sans-serif;
 }
-h2{
-  font-size: 60px;
-
+p{
+  font-size: 20px;
+  
 }
 
-h3{
-    font-size: 20px;
+h2 {
+        color: black;
+        font-size: 65px;
+        text-align: center;
+        margin-right: 220px;
+        margin-top: -100px;
+        overflow: hidden; 
+        border-right: .15em solid gray; 
+        white-space: nowrap; 
+        margin: 0 auto; 
+        letter-spacing: .04em; 
+        animation: 
+         typing 4.0s steps(50, end ),
+        blink-caret .75s step-end infinite;
 }
 
-h1{
-   font-family: 'Karla', sans-serif;
-font-size: 85px;
+
+@keyframes typing {
+  from { width: 0% }
+  to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
 }
 
 #container{
@@ -43,7 +62,7 @@ margin-left: 350px;
 /* border: #42a5f5 2px solid; */
 background-color: white;
 border-radius: 20px;
- padding: 10px;
+ padding: 7px;
   box-shadow: 3px 5px 13px 2px #888888;
   overflow: scroll;
 }
@@ -52,23 +71,28 @@ border-radius: 20px;
     overflow: -moz-hidden-unscrollable;
 }
 
-
-
 footer{
-margin-top: 200px;
+margin-top: 70px;
 height: 210px;
 background: #2b303b;
 color: white;
 box-shadow: 4px #888888;
-font-family: 'Karla', sans-serif;
+font-family:  Raleway;
+
+ 
 }
 .bottom-list{
     margin-left: 20px;
     margin-bottom: 8px;
-    
+  }
+  .container-title{
+    font-size: 40px;
+    font-weight: bolder;
 }
+
 h3{
     font-size: 40px;
+    
 }
 
 
@@ -362,5 +386,36 @@ section{
   100% {
     opacity:1;
     -ms-transform:  translate(0px,0px)  ;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header{
+    height: 50px;
+  }
+  #container {
+    margin-left: auto;
+    width: 100%;
+    height: 250px;
+  }
+  .container-title{
+    font-size: 25px;
+  }
+
+  h3{
+    font-size: 19px;
+    font-weight: 900;
+    
+  }
+  .flash-comments{
+    margin-left: auto;
+    width: 100%
+  }
+  footer{
+    margin-top: 40px;
+    height: 130px;
+  }
+  li{
+    font-size: 15px;
   }
 }

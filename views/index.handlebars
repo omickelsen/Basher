@@ -1,30 +1,25 @@
 <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <header>
-    <div class="logo">
-        <img src="/assets/basher.png" />
-
+    <div class="logo" height="120" width="80">
+        <img src="/assets/basher.png">
     </div>
     <div class="menu">
 
     </div>
 </header>
 <section>
-
-    <h2>the bash</h2>
-    {{!-- <div>
-        <h5>-Read</h5>
-        <h5>-Think</h5>
-        <h5>-Bash</h5>
-    </div> --}}
-
+    <div>
+        <h2 id="bash-header">the bash-read, think, bash</h2>
+    </div>
+    <br>
+    <br>
     <div class="col-s8" id="container">
         <div id="inside">
 
         </div>
-        <h3>Today's Article</h3>
-        {{!-- <form id="article-form"> --}}
-        {{!-- <label for="article-input">Search for an article</label> --}}
-        {{!-- <input type="text" id="article-input"><br> --}}
+        <h3 class="container-title">Today's Article</h3>
+
 
         <!-- This button will trigger our AJAX call -->
         <input id="find-article" type="submit" value="Article Search">
@@ -91,6 +86,22 @@
 </div>
 
 </section>
+
+<footer class="row">
+
+    <div class="col s4" class="bottom-list">
+        <h3>basher</h3>
+        <ul id="list">
+            <li><a href="#"></a>-politics</li>
+            <li><a href="#"></a>-sports</li>
+            <li><a href="#"></a>-pop culture</li>
+            <li><a href="#"></a>-video</li>
+        </ul>
+    </div>
+
+</footer>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 
@@ -113,11 +124,11 @@
 
             var articleDiv = $( "#article-view" );
 
-            var pOne = $( "<p>" ).text( ( response.articles[3].content ) );
-            var pTwo = $( "<p>" ).text( ( response.articles[3].title ) );
+            var pOne = $( "<p>" ).text( ( response.articles[0].content ) );
+            var pTwo = $( "<p>" ).text( ( response.articles[0].title ) );
             var pThree = $( "<p>" ).text( ( "" ) );
 
-            var pFour = $( "<a href='" + response.articles[3].url + "'>" + response.articles[3].url + "</a>" ).text( ( response.articles[3].url ) )
+            var pFour = $( "<a href='" + response.articles[0].url + "'>" + response.articles[0].url + "</a>" ).text( ( response.articles[0].url ) )
             console.log( pTwo )
             //var pFive = $( "<p>" ).text( ( response.articles[3].urlToImage ) )
 
@@ -139,22 +150,6 @@
     } )
 
 </script>
-</section>
-<footer>
-    <div class="bottom-list">
-        <h3>bash</h3>
-        <ul id="list">
-            <li><a href="#"></a>-politics</li>
-            <li><a href="#"></a>-sports</li>
-            <li><a href="#"></a>-pop culture</li>
-            <li><a href="#"></a>-video</li>
-        </ul>
-
-    </div>
-</footer>
-
-
-
 
 </body>
 
