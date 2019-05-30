@@ -24,6 +24,12 @@
         <!-- This button will trigger our AJAX call -->
         <input id="find-article" type="submit" value="Article Search">
         </form>
+        <br>
+        <br>
+        <div id="mydiv">
+            <iframe id="frame" src="" width="100%" height="200">
+            </iframe>
+        </div>
         <div id="article-view"></div>
 
     </div>
@@ -103,56 +109,6 @@
     </div>
 
 </footer>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-
-    $("#find-article").on("click", function (event) {
-        console.log("button clicked")
-
-
-        event.preventDefault();
-
-
-
-        var queryURL = "https://newsapi.org/v2/top-headlines?q=trump&apiKey=7836d07dd0544103b33582bb01d2440e";
-
-        $.ajax({
-            url: queryURL,
-            method: "GET"
-        }).then(function (response) {
-            $("#find-article").text(JSON.stringify(response));
-            console.log(response)
-
-            var articleDiv = $("#article-view");
-
-            var pOne = $("<p>").text((response.articles[0].content));
-            var pTwo = $("<p>").text((response.articles[0].title));
-            var pThree = $("<p>").text((""));
-
-            var pFour = $("<a href='" + response.articles[0].url + "'>" + response.articles[0].url + "</a>").text((response.articles[0].url))
-            console.log(pTwo)
-            //var pFive = $( "<p>" ).text( ( response.articles[3].urlToImage ) )
-
-
-
-
-            articleDiv.append(pOne);
-            pOne.prepend(pTwo)
-            pTwo.append(pThree)
-            pThree.append(pFour)
-            //pFour.append( pFive )
-
-            $(document).on('click', 'a', function (e) {
-                e.preventDefault();
-                var url = $(this).attr('href');
-                window.open(url, '_blank');
-            });
-        })
-    })
-
-</script>
 
 </body>
 

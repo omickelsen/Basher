@@ -72,14 +72,16 @@ h2 {
 
 #container {
 
-  box-shadow: gray;
-  height: 350px;
-  width: 50%;
-  margin-left: 350px;
-  /* border: #42a5f5 2px solid; */
-  background-color: white;
-  border-radius: 20px;
-  padding: 7px;
+
+box-shadow: gray;
+height: 350px;
+width: 50%;
+margin-left: 360px;
+/* border: #42a5f5 2px solid; */
+background-color: white;
+border-radius: 10px;
+padding: 7px;
+
   box-shadow: 3px 5px 13px 2px #888888;
   overflow: scroll;
 }
@@ -100,9 +102,14 @@ footer {
 
 }
 
-.bottom-list {
-  margin-left: 20px;
-  margin-bottom: 8px;
+.bottom-list{
+    margin-left: 20px;
+    margin-bottom: 8px;
+  }
+  .container-title{
+    font-size: 25px;
+    font-weight: bolder;
+
 }
 
 .container-title {
@@ -135,10 +142,11 @@ section {
   width: calc(100% - 45px);
 }
 
-.logo img {
-  height: 35px;
-  padding: 6px;
-  margin-left: 20px;
+
+.logo img{
+    height: 40px;
+    padding: 6px;
+    margin-left: 20px;
 }
 
 
@@ -231,10 +239,11 @@ section {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-@media(max-width:980px) {
-  .flash-comments {
-    width: 100%;
-  }
+
+@media(max-width:980px){
+    .flash-comments, #container {
+        width: 100%;
+    }
 
   .flash-comments button,
   .flash-comments textarea {
@@ -243,21 +252,22 @@ section {
     margin-top: 5px;
   }
 
-  .flash-comments .comment-form {
-    flex-direction: column;
-    height: 120px;
-    display: flex;
-  }
+    .flash-comments .comment-form, #container {
+        flex-direction: column;
+        height: 120px;
+        display: flex;
+    }
 
 
-  .flash-comments .comment-form .right-side {
-    flex: 3;
-    padding-right: 5px;
-  }
+    .flash-comments .comment-form .right-side, #container{
+        flex:3;
+        padding-right: 5px;
+    }
 
-  h2 {
-    font-size: 20px;
-  }
+    h2, h3 {
+        font-size: 20px;
+    }
+
 
   .post iframe {
     width: 100% !important;
@@ -432,8 +442,10 @@ section {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  header {
+
+@media only screen and (max-width: 980px) {
+  header{
+
     height: 50px;
   }
 
@@ -458,8 +470,9 @@ section {
     width: 100%
   }
 
-  footer {
-    margin-top: 40px;
+  footer{
+    margin-top: 50px;
+
     height: 130px;
   }
 
