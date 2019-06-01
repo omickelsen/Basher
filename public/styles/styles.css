@@ -184,6 +184,12 @@ section {
   padding: 4px;
 }
 
+.flash-comments .comment .triggered {
+  display: flex;
+  border-bottom: 1px solid #eaeaea;
+  padding: 4px;
+}
+
 
 .flash-comments form {
   margin-bottom: 0px;

@@ -49,9 +49,16 @@
                     <input placeholder="enter valid email" required type="email" id="new_comment_email">
                 </div>
                 <div class="row">
-                    <textarea placeholder="enter comment text" required id="new_comment_text" rows="3"></textarea>
+                    <textarea placeholder="enter comment text" required id="new_comment_text" rows="3"></textarea>  
+                </div>
+                <div class="row">
+                    <input type="radio" name="triggered" value="true" id="true-triggered">
+                        <label for="true">Triggered</label>
+                    <input type="radio" name="triggered" value="false" id="false-triggered">
+                        <label for="false">Not-Triggered</label>
                 </div>
             </div>
+        
             <div class="right-side">
                 <button type="submit" class="button-secondary pure-button">Send Comment</button>
             </div>
@@ -59,7 +66,13 @@
     </form>
     <div class="comments-list" id="comments-list">
         {{#each bashingTable}}
+        {{#if this.triggered}}
+        <div class="comment triggered">
+            
+        {{/if}}
+        {{#else}}
             <div class="comment">
+        {{/else}}
                 <div class="user-icon">
                     <img src="/assets/user.png" />
                 </div>
@@ -79,19 +92,19 @@
         {{/each}}
     </div>
     <script id="comment-template" type="text/x-template">
-                <div class="user-icon">
-                    <img src="/assets/user.png" />
-                </div>
-                <div class="comment-info">
-                    <div class="row">
-                        <div class="name">_name_</div>
-                        <div class="email">_email_</div>
-                        <div class="time">_time_</div>
-                    </div>
-                    <div class="row">
-                        <div class="text">_comment_</div>
-                </div>             
-            </script>
+        <div class="user-icon">
+            <img src="/assets/user.png" />
+        </div>
+        <div class="comment-info">
+            <div class="row">
+                <div class="name">_name_</div>
+                <div class="email">_email_</div>
+                <div class="time">_time_</div>
+            </div>
+            <div class="row">
+                <div class="text">_comment_</div>
+            </div>             
+    </script>
 </div>
 
 </section>

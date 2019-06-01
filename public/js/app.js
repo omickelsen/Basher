@@ -24,12 +24,6 @@
 
   var pusherKey = getApiKey();
   
-
-
-
-
-
-
   var serverUrl = "/",
     comments = [],
     pusher = new Pusher(pusherKey, {
@@ -72,13 +66,28 @@
     commentsList.insertAdjacentElement("afterbegin", newCommentNode);
   }
 
+ 
   function addNewComment(event) {
     event.preventDefault();
+    var trigBool;
+    var radios = document.getElementsByName('triggered');
+      for (var i = 0, length = radios.length; i < length; i++)
+      {
+      if (radios[i].checked)
+      {
+      // do whatever you want with the checked radio
+      trigBool = radios[i].value;
+      // only one radio can be logically checked, don't check the rest
+      break;
+      }
+      }
+      console.log(trigBool);
+    var isTrueSet = (trigBool == 'true');  
     var newComment = {
       "name": document.getElementById('new_comment_name').value,
       "email": document.getElementById('new_comment_email').value,
-      "comment": document.getElementById('new_comment_text').value
-
+      "comment": document.getElementById('new_comment_text').value,
+      "triggered": isTrueSet
     }
 
 

@@ -59,13 +59,15 @@ app.post('/comment', function (req, res) {
     name: req.body.name,
     email: req.body.email,
     comment: req.body.comment,
-    time: req.body.time
+    time: req.body.time,
+    triggered: req.body.triggered
   }
   db.bashingTable.create({
     userName: req.body.name,
     userEmail: req.body.email,
     userComment: req.body.comment,
-    createdAt: req.body.time
+    createdAt: req.body.time,
+    triggered: req.body.triggered
   }).then(function (response) {
     console.log(response);
 
