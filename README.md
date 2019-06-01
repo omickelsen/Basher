@@ -39,6 +39,6 @@ for everyone to give updates on where they are at with their duties, and if they
 4. Displaying just 1 article per day that is most controversial at that time
 5. Have different 'Bash Rooms' that have different subjects to bash on
 
-![Basher](./bamazon.gif)
+![Basher](./Basher.gif)
 
 
