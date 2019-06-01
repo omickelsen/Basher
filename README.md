@@ -24,7 +24,7 @@ for everyone to give updates on where they are at with their duties, and if they
 ***Individual Responsibilities***
     Tyson: Display comments from database, and getting them to look the same as newly made comments.  Worked on different looks for front end and attempted to add trigger button for certain comments.
 
-    Ori: Set up pusher and MVC model. Got app running up on Heroku.  Created starting html page. Helped get comments to show on page and attempted to add trigger button for certain comments.
+    Orie: Set up pusher and MVC model. Got app running up on Heroku.  Created starting html page. Helped get comments to show on page and attempted to add trigger button for certain comments.
 
     Braden: Created database and helped get it to store user comments.  Got comments to display a timestamp 
 
