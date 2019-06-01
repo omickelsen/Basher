@@ -124,7 +124,7 @@
       method: "GET"
     }).then(function (response) {
       $("#find-article").text(JSON.stringify(response));
-      $("#frame").attr("src", response.articles[4].url);
+      $("#frame").attr("src", response.articles[Math.floor(Math.random() * 8)].url);
       console.log(response)
 
       $(document).on('click', 'a', function (e) {
